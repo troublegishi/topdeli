@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="es-CL">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#eee6dc">
+    <meta name="description" content="Datos para transferencias de TopDeli.">
+    <title>Datos para transferencia | TopDeli</title>
+    <link rel="icon" type="image/png" href="images/logo.png">
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <main class="page">
+      <div class="transfer-panel">
+        <header class="brand-header">
+          <img class="brand-logo" src="images/logo.png" alt="Logo TopDeli" width="1536" height="1024">
+          <div class="header-rule" aria-hidden="true"><span></span></div>
+          <p class="eyebrow">TOPDELI</p>
+          <h1>Datos para transferencia</h1>
+          <p class="intro">Realiza tu transferencia utilizando los siguientes datos.</p>
+        </header>
+
+        <section class="details" aria-labelledby="details-heading">
+          <div class="details-heading">
+            <div>
+
+              <h2 id="details-heading">Datos de la cuenta</h2>
+            </div>
+          </div>
+
+          <dl class="bank-details">
+            <div class="detail-row"><dt>Nombre </dt><dd data-field="nombre"></dd></div>
+            <div class="detail-row"><dt>RUT</dt><dd data-field="rut"></dd></div>
+            <div class="detail-row"><dt>Banco</dt><dd data-field="banco"></dd></div>
+            <div class="detail-row"><dt>Tipo de cuenta</dt><dd data-field="tipoCuenta"></dd></div>
+            <div class="detail-row"><dt>Número de cuenta</dt><dd data-field="numeroCuenta"></dd></div>
+            <div class="detail-row"><dt>Correo electrónico</dt><dd data-field="correo"></dd></div>
+          </dl>
+
+
+          <button class="copy-button" id="copy-button" type="button" aria-describedby="copy-status">
+            <svg class="copy-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <rect x="8" y="8" width="12" height="12" rx="2"></rect>
+              <path d="M16 8V6a2 2 0 0 0-2-2H6a2 2 0 0 0-2 2v8a2 2 0 0 0 2 2h2"></path>
+            </svg>
+            <svg class="check-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <path d="m5 12 4 4L19 6"></path>
+            </svg>
+            <span class="button-label">Copiar datos</span>
+          </button>
+          <p class="copy-status" id="copy-status" role="status" aria-live="polite"></p>
+        </section>
+      </div>
+    </main>
+  </body>
+</html>
